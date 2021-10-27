@@ -49,6 +49,7 @@ li {
 .title {
   text-align: center;
   color: #263238;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 60px;
@@ -148,6 +149,7 @@ li {
 .search__inner-title {
   margin-bottom: 10px;
   font-size: 48px;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   line-height: 72px;
   color: white;
@@ -155,6 +157,7 @@ li {
 .search__inner-text {
   margin-bottom: 50px;
   font-size: 20px;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   line-height: 30px;
 }
@@ -181,22 +184,27 @@ li {
 }
 .search__inner-form input::-webkit-input-placeholder {
   color: #90a4ae;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
 }
 .search__inner-form input::-moz-placeholder {
   color: #90a4ae;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
 }
 .search__inner-form input:-ms-input-placeholder {
   color: #90a4ae;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
 }
 .search__inner-form input::-ms-input-placeholder {
   color: #90a4ae;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
 }
 .search__inner-form input::placeholder {
   color: #90a4ae;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
 }
 .search__inner-form button {
@@ -274,6 +282,7 @@ li {
       -ms-flex-align: center;
           align-items: center;
   min-height: 90px;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   border-bottom: 1px solid #e7ecf2;
 }
@@ -293,6 +302,7 @@ li {
 .products__item-price {
   font-size: 20px;
   color: #263238;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
 }
 .products__item-info {
@@ -328,6 +338,7 @@ li {
   margin-right: 14px;
 }
 .products__item-author span {
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
 }
@@ -381,4 +392,82 @@ li {
   height: 16px;
   cursor: pointer;
   outline: none;
+}
+
+/*advantages*/
+.advantages {
+  background-color: #263238;
+  padding: 110px 0;
+}
+
+.advantages__title {
+  color: #fff;
+}
+
+.advantages__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.advantages__item {
+  max-width: 370px;
+  text-align: center;
+  padding: 0 15px;
+}
+.advantages__item:hover .advantages__item-images {
+  background-color: #8bc34a;
+}
+.advantages__item:hover .advantages__item-title {
+  color: #8bc34a;
+}
+.advantages__item:hover .advantages__item-images g {
+  fill: #fff;
+}
+.advantages__item-images {
+  width: 114px;
+  height: 114px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto 30px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.advantages__item-title {
+  margin-bottom: 25px;
+  font-size: 24px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.advantages__item-text {
+  font-size: 15px;
+}
+
+.icosvg-1 svg {
+  width: 60px;
+}
+
+.icosvg-2 svg {
+  width: 120px;
+}
+
+.icosvg-3 svg {
+  width: 86px;
 }
