@@ -5,26 +5,23 @@ html{
 *,*::before,*::after{
 	box-sizing: inherit;
 }
-html,body{
-	height: 100%;
+
+
+* {
+	margin: 0;
+	padding: 0;
 }
 .content {
-	flex: 0 0 auto;
+	min-height: calc(100vh - 80px);
 }
-.footer {
-	flex: 0 0 auto;
-}
-.wrapper {
-	display: flex;
-	flex-direction: column;
-	min-height: 100%;
-}
+
 body{
 	font-family: 'Roboto-Regular',sans-serif;
 	font-size: 15px;
 	line-height: 24px;
 	color: $text;
 	font-weight: 400;
+	overflow-x: hidden;
 }
 
 a{
@@ -99,5 +96,17 @@ li{
 		}
 
 
+	}
+}
+.angle-right{
+	position: relative;
+	padding-left: 15px;
+	&::before{
+		content: '\f105';
+		position: absolute;
+		color: $green;
+		font-size: 14px;
+		left: 0;
+		font-family: 'icomoon';
 	}
 }
