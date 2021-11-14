@@ -10,7 +10,37 @@ $(function(){
 		dots:true,
 		arrows:false,
 		slidesToShow: 4,
-  	slidesToScroll: 4
+  	slidesToScroll: 4,
+		responsive: [
+			{
+				breakpoint: 1900,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 3,
+					infinite: true,
+					dots: true
+				}
+			},
+			{
+				breakpoint: 1440,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2,
+					infinite: true,
+					dots: true
+				}
+			},
+			{
+				breakpoint: 801,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					infinite: true,
+					dots: true
+				}
+			},
+			
+		]
 	});
 	
 
@@ -26,17 +56,18 @@ $(function(){
 	});
 
 	$('.icon-th-list').on('click', function(){
-		$('.products__item').addClass('list ')
+		$('.products__item').addClass('list plus')
 		$('.icon-th-list').addClass('active ')
 		$('.icon-th-large').removeClass('active ')
 	});
 	$('.icon-th-large').on('click',function(){
-		$('.products__item').removeClass('list')
+		$('.products__item').removeClass('list plus')
 		$('.icon-th-list').removeClass('active ')
 		$('.icon-th-large').addClass('active ')
 	});
 
-	
+	$('input[type="file"], select').styler();
+
 	$('.menu__btn').on('click',function(){
 		$('.menu__list').slideToggle();
 	});
